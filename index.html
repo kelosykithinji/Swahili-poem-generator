@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swahili Poem Generator</title>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/index.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
         <main>
             <form class="form-content" id="form-content">
                 <!--there should be an autofocus and autocomplete on this form-->
-                <input type="text" placeholder="Enter your poem topic" required class="poem-topic">
+                <input type="text" placeholder="Enter your poem topic" required class="poem-topic" id="poem-topic">
                 <input type="submit" class="submit-button">
             </form>
             <div class="divider"></div>
