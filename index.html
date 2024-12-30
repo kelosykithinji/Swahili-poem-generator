@@ -7,21 +7,28 @@
     <link rel="stylesheet" href="src/index.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to  Swahili Poem Generator</h1>
-    </header>
-    <main>
-        <form action="">
-            <input type="text" placeholder="Enter your poem topic" required>
-            <input type="submit" >
-        </form>
-        <div>
-            Hapa ndipo umenifikisha
-            <br>
-            Umalenga na ujopo
-        </div>
-    </main>
+    <div class="container">
+        <header>
+            <div class="heading">
+            <h1> Swahili Poem Generator</h1>
+            </div>
+        </header>
+        <main>
+            <form class="form-content">
+                <!--there should be an autofocus and autocomplete on this form-->
+                <input type="text" placeholder="Enter your poem topic" required class="poem-topic">
+                <input type="submit" class="submit-button">
+            </form>
+            <div class="divider"></div>
+            <div>
+                Hapa ndipo umenifikisha
+                <br>
+                Umalenga na ujopo
+            </div>
+        </main>
+    </div>
     <footer>This was coded by<a href="https://github.com/kelosykithinji" target="_blank">Kelosy Kithinji</a>  and open-sourced on <a href="https://github.com/kelosykithinji/Swahili-poem-generator" target="_blank">GitHub</a> and hosted on <a href="https://swahili-poem-generator.netlify.app/" target="_blank">Netlify</a></footer>
+
     <script src="src/index.js"></script>
 </body>
 </html>
