@@ -31,8 +31,18 @@ main{
     max-width: 600px;
     margin:20px auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-left: #B89280 solid 5px;
+    /* this here ensures the div section for the poem is hidden*/
+    /*display:none;*/
 }
-
+.hidden{
+    display:none;
+}
+.poem-topic-sample{
+   text-align: left;
+   padding-left: 60px;
+   line-height: 1.5;  
+}
 
 .poem-topic{
     padding:15px;
@@ -50,4 +60,17 @@ main{
 }
 footer{
     padding:10px;
+}
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
